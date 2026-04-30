@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Yotta Palate Paradox | About – Cream & Yellow Philosophy</title>
+  <meta name="description" content="Discover the story behind Yotta Palate Paradox: a culinary sanctuary where cream meets golden hour. Our philosophy, team, and gastronomic vision.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef9e6;  /* cream base */
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #3a2a1f;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* cream & yellow theme palette */
+    :root {
+      --cream: #fff9ef;
+      --pale-cream: #fffaf0;
+      --butter: #fce9b4;
+      --honey: #f7c873;
+      --golden: #e5a641;
+      --warm-brown: #7a5a3a;
+      --deep-amber: #b47c2e;
+    }
+
+    /* header & navigation */
+    .top-bar {
+      background: var(--cream);
+      border-bottom: 4px solid var(--honey);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+    .logo h1 {
+      font-size: 1.9rem;
+      letter-spacing: -0.5px;
+      color: #a5672d;
+      font-weight: 600;
+    }
+    .logo p {
+      font-size: 0.85rem;
+      color: #b37b42;
+      font-style: italic;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #7a5a3a;
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      border-bottom-color: var(--golden);
+      color: #c47e2a;
+    }
+
+    /* main container */
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem 2rem 3rem;
+    }
+
+    /* hero about section */
+    .about-hero {
+      background: linear-gradient(135deg, #fff4e0, #fef1da);
+      border-radius: 48px;
+      padding: 2.8rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      border: 1px solid #ffe3b0;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.02);
+    }
+    .about-hero h2 {
+      font-size: 2.6rem;
+      color: #c2822b;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+    }
+    .about-hero .tagline {
+      font-size: 1.2rem;
+      color: #9a6a2e;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    .about-hero p {
+      max-width: 800px;
+      margin: 1.2rem auto 0;
+      font-size: 1.1rem;
+      color: #5e3f22;
+    }
+
+    /* story grid + philosophy blocks */
+    .story-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin: 3rem 0;
+      align-items: center;
+    }
+    .story-text {
+      flex: 2;
+      background: var(--cream);
+      padding: 2rem;
+      border-radius: 36px;
+      border: 1px solid #faeecf;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+    }
+    .story-text h3 {
+      font-size: 1.9rem;
+      color: #b26c24;
+      margin-bottom: 1rem;
+      border-left: 6px solid var(--golden);
+      padding-left: 1rem;
+    }
+    .story-text p {
+      margin-bottom: 1.2rem;
+      color: #4a3720;
+      font-size: 1.05rem;
+    }
+    .story-visual {
+      flex: 1;
+      background: #fdf0d8;
+      border-radius: 40px;
+      padding: 2rem;
+      text-align: center;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #f7dfae;
+    }
+    .story-visual span {
+      font-size: 5rem;
+    }
+    .story-visual p {
+      margin-top: 1rem;
+      font-weight: 500;
+      color: #b87a2e;
+    }
+
+    /* philosophy cards */
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin: 2.5rem 0;
+    }
+    .phil-card {
+      background: var(--pale-cream);
+      border-radius: 32px;
+      padding: 1.8rem;
+      transition: transform 0.2s;
+      border: 1px solid #faebc8;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.03);
+    }
+    .phil-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--butter);
+    }
+    .phil-icon {
+      font-size: 2.7rem;
+      margin-bottom: 1rem;
+    }
+    .phil-card h4 {
+      font-size: 1.5rem;
+      color: #b1722c;
+      margin-bottom: 0.75rem;
+    }
+    .phil-card p {
+      color: #5a4228;
+    }
+
+    /* team section */
+    .team-section {
+      margin: 3rem 0 2rem;
+    }
+    .team-section h3 {
+      font-size: 2rem;
+      color: #b26c24;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .team-member {
+      background: #fffcf0;
+      border-radius: 48px;
+      padding: 1.5rem;
+      text-align: center;
+      width: 240px;
+      border: 1px solid #fae3bb;
+      transition: all 0.2s;
+    }
+    .team-member:hover {
+      background: #fff7e8;
+    }
+    .member-avatar {
+      font-size: 3.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .team-member h4 {
+      font-size: 1.4rem;
+      color: #9b601f;
+    }
+    .team-member .role {
+      font-size: 0.85rem;
+      color: #c48a42;
+      font-weight: 500;
+      margin: 0.3rem 0;
+    }
+    .team-member .bio {
+      font-size: 0.85rem;
+      color: #6e4f2c;
+      margin-top: 0.6rem;
+    }
+
+    /* index terms / glossary snapshot */
+    .index-snapshot {
+      background: #fdf6e3;
+      border-radius: 28px;
+      padding: 1.8rem;
+      margin: 3rem 0 1rem;
+      border: 1px solid #ffeaaf;
+    }
+    .index-snapshot h3 {
+      font-size: 1.6rem;
+      color: #a46724;
+      margin-bottom: 1rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+    .tag {
+      background: #f9e5b3;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #6b431e;
+    }
+    .about-footer-note {
+      text-align: center;
+      margin: 2rem 0 0;
+      font-size: 0.9rem;
+      color: #b28247;
+      border-top: 1px solid #f3e3c2;
+      padding-top: 1.5rem;
+    }
+
+    /* footer */
+    footer {
+      background: #2f2419;
+      color: #faeecb;
+      margin-top: 3rem;
+      padding: 2rem 2rem 1.5rem;
+      border-radius: 48px 48px 0 0;
+    }
+    .footer-content {
+      max-width: 1300px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .footer-contact {
+      line-height: 1.7;
+    }
+    .footer-contact a {
+      color: #fad48b;
+      text-decoration: none;
+    }
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .footer-links a {
+      color: #ffdeaa;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+    @media (max-width: 720px) {
+      .top-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .about-hero h2 {
+        font-size: 1.8rem;
+      }
+      .story-section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="top-bar">
+    <div class="logo">
+      <h1>🍽 Yotta Palate Paradox</h1>
+      <p>cream · golden · texture · aroma</p>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="container">
+  <!-- About hero section -->
+  <div class="about-hero">
+    <h2>Where cream meets golden hour</h2>
+    <div class="tagline">— The story behind the paradox —</div>
+    <p>Yotta Palate Paradox is not just a recipe collection; it's a sensory manifesto. Born from the love of buttery textures, luminous spices, and the evocative power of yellow‑hued ingredients, we celebrate the delicate tension between richness and lightness. Every dish tells a story of warmth, nostalgia, and innovation.</p>
+  </div>
+
+  <!-- Story & origins -->
+  <div class="story-section">
+    <div class="story-text">
+      <h3>🍯 The origin of paradox</h3>
+      <p>Founded in 2023 by chef-curator Amara Valentin, Yotta Palate Paradox started as a tiny kitchen journal exploring the interplay between heavy cream’s luxurious mouthfeel and the ethereal brightness of saffron, turmeric, and honey. The word “Yotta” — inspired by the vastness of flavor possibilities — merges with “Palate” to evoke endless gastronomic dimensions.</p>
+      <p>Our philosophy embraces contradictions: velvety custards that taste airy, golden broths that feel both grounding and uplifting. We believe that cream and yellow ingredients form a universal language — from Parisian crèmes to Indian kheer, from Tuscan risotto to Mexican chowders. Each recipe is an invitation to slow down, taste intentionally, and honor the paradox of simplicity and depth.</p>
+      <p>Today, our sanctuary serves thousands of home cooks, professional chefs, and curious palates worldwide. We are a digital atelier where tradition meets creativity, and every cream sauce whispers a golden secret.</p>
+    </div>
+    <div class="story-visual">
+      <span>🧈✨</span>
+      <p>“Cream is a canvas;<br> saffron, the first brushstroke.”</p>
+      <span style="font-size:2rem;">— Yotta axiom</span>
+    </div>
+  </div>
+
+  <!-- Philosophy pillars (cards) -->
+  <h3 style="font-size: 1.9rem; color:#b26c24; margin-top: 1rem;">📜 guiding pillars</h3>
+  <div class="philosophy-grid">
+    <div class="phil-card">
+      <div class="phil-icon">🍦</div>
+      <h4>Cream Emulsion</h4>
+      <p>We master the art of butterfat harmony — from gentle heat infusion to stable emulsions that feel silky, never heavy. Every cream sauce respects the ingredient’s natural integrity.</p>
+    </div>
+    <div class="phil-card">
+      <div class="phil-icon">🌼</div>
+      <h4>Golden Alchemy</h4>
+      <p>Turmeric, saffron, marigold, and honey — our palette celebrates yellow pigments that carry warmth, anti-inflammatory magic, and radiant color.</p>
+    </div>
+    <div class="phil-card">
+      <div class="phil-icon">🍯</div>
+      <h4>Textural Paradox</h4>
+      <p>Crispy sage on a creamy risotto, toasted nuts over custard: we seek contrasts that elevate each bite from predictable to sublime.</p>
+    </div>
+    <div class="phil-card">
+      <div class="phil-icon">🌾</div>
+      <h4>Seasonal Resonance</h4>
+      <p>Corn in summer, butternut in autumn — we honor nature’s golden moments, letting peak ingredients shine with minimal intervention.</p>
+    </div>
+  </div>
+
+  <!-- Team introduction (authentic and warm) -->
+  <div class="team-section">
+    <h3>🥄 meet the curators</h3>
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="member-avatar">👩‍🍳</div>
+        <h4>Amara Valentin</h4>
+        <div class="role">Founder & Culinary Director</div>
+        <div class="bio">Former pastry chef turned flavor philosopher. Amara believes in the poetry of cream and the architecture of golden textures.</div>
+      </div>
+      <div class="team-member">
+        <div class="member-avatar">🌿</div>
+        <h4>Jasper Lin</h4>
+        <div class="role">Head of Recipe Development</div>
+        <div class="bio">Spice alchemist & turmeric evangelist. Jasper travels to source saffron, honey varietals, and heirloom corn for the paradox kitchen.</div>
+      </div>
+      <div class="team-member">
+        <div class="member-avatar">📸</div>
+        <h4>Mira Castellano</h4>
+        <div class="role">Food Stylist & Visual Storyteller</div>
+        <div class="bio">Mira captures the golden hour glow of every dish, transforming cream into visual poetry.</div>
+      </div>
+      <div class="team-member">
+        <div class="member-avatar">🍽️</div>
+        <h4>Leo Park</h4>
+        <div class="role">Community & Tastings</div>
+        <div class="bio">Leo bridges our digital atelier with live supper clubs, where the paradox is experienced firsthand.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- index terms / glossary snippet same as homepage but integrated into about for completeness -->
+  <div class="index-snapshot">
+    <h3>📑 golden index — core terms of the paradox</h3>
+    <div class="tags" id="aboutIndexTags">
+      <!-- dynamic tags injected via js -->
+    </div>
+    <p style="margin-top: 1rem; font-size: 0.85rem;">Our culinary lexicon — from <strong>saffron cream</strong> to <strong>honey drizzle</strong> — defines the unique Yotta vocabulary. Each term reflects a specific texture, aroma, or yellow essence that unites our recipes.</p>
+  </div>
+
+  <div class="about-footer-note">
+    ✦ Yotta Palate Paradox is an independent recipe sanctuary, built on the belief that every meal can be a golden meditation. ✦
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-contact">
+      <strong>📍 Yotta Palate Paradox - Culinary Atelier</strong><br>
+      422 Golden Cream Lane, Suite 7<br>
+      Butterfield, NY 10014<br>
+      📞 <a href="tel:+12125556789">+1 (212) 555-6789</a><br>
+      ✉️ hello@yottapalate.com
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="index-terms.html">Index Terms</a>
+      <a href="index.html">Recipes</a>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 Yotta Palate Paradox — cream & yellow recipe chronicles. All unique content crafted with paradox.
+  </div>
+</footer>
+
+<script>
+  // index terms for about page display (consistent with main site)
+  const indexTermsList = [
+    "saffron cream", "honey turmeric", "golden risotto", "yellow velvet soup", 
+    "custard tart", "creamy corn chowder", "mascarpone", "butternut glow", 
+    "saffron rice pudding", "cream emulsion", "marigold petals", "golden milk spice", 
+    "poblano cream", "honey drizzle", "parmesan crust", "lemon zest", 
+    "white pepper finish", "butter-poached", "vanilla custard", "turmeric warmth"
+  ];
+
+  function populateAboutTags() {
+    const container = document.getElementById('aboutIndexTags');
+    if (container) {
+      container.innerHTML = indexTermsList.map(term => `<span class="tag">#${term}</span>`).join('');
+    }
+  }
+
+  // optional active link highlight for internal consistency (if we want to mark about active manually already in HTML)
+  // ensure any external link behavior matches design (just visual)
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('href') === 'about.html') {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+  
+  // simple hover / additional smoothness
+  populateAboutTags();
+
+  // small easter egg: console log greeting
+  console.log("Yotta Palate Paradox — About page loaded: cream meets golden philosophy.");
+</script>
+</body>
+</html>

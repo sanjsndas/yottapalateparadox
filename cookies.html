@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Yotta Palate Paradox | Golden Cookies Pledge</title>
+  <meta name="description" content="Our Cookies Policy explains how Yotta Palate Paradox uses minimal, essential cookies — no tracking, no third-party ads. Just golden, transparent browsing.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef9e6;
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #3a2a1f;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --cream: #fff9ef;
+      --pale-cream: #fffaf0;
+      --butter: #fce9b4;
+      --honey: #f7c873;
+      --golden: #e5a641;
+      --warm-brown: #7a5a3a;
+      --deep-amber: #b47c2e;
+      --sage-light: #eae3d0;
+    }
+
+    .top-bar {
+      background: var(--cream);
+      border-bottom: 4px solid var(--honey);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+    .logo h1 {
+      font-size: 1.9rem;
+      letter-spacing: -0.5px;
+      color: #a5672d;
+      font-weight: 600;
+    }
+    .logo p {
+      font-size: 0.85rem;
+      color: #b37b42;
+      font-style: italic;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #7a5a3a;
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      border-bottom-color: var(--golden);
+      color: #c47e2a;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem 2rem 3rem;
+    }
+
+    /* Cookies hero */
+    .cookies-hero {
+      background: linear-gradient(115deg, #fff6e6, #fef2df);
+      border-radius: 48px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid #ffe3b0;
+      text-align: center;
+    }
+    .cookies-hero h2 {
+      font-size: 2.2rem;
+      color: #c2822b;
+      font-weight: 500;
+    }
+    .cookies-hero p {
+      max-width: 700px;
+      margin: 0.8rem auto 0;
+      color: #5e3f22;
+    }
+
+    /* main policy card */
+    .policy-card {
+      background: var(--cream);
+      border-radius: 48px;
+      padding: 2.5rem;
+      box-shadow: 0 16px 28px rgba(0,0,0,0.02);
+      border: 1px solid #faeecf;
+      margin-bottom: 2rem;
+    }
+    .policy-card h3 {
+      font-size: 1.8rem;
+      color: #b3742c;
+      margin: 1.5rem 0 0.8rem 0;
+      border-left: 6px solid var(--golden);
+      padding-left: 1rem;
+    }
+    .policy-card h3:first-of-type {
+      margin-top: 0;
+    }
+    .policy-card h4 {
+      font-size: 1.3rem;
+      color: #b87a3a;
+      margin: 1.2rem 0 0.5rem;
+      font-weight: 600;
+    }
+    .policy-card p {
+      margin-bottom: 1rem;
+      color: #4f3a24;
+    }
+    .policy-card ul, .policy-card ol {
+      margin: 0.8rem 0 1.2rem 1.8rem;
+      color: #4f3a24;
+    }
+    .policy-card li {
+      margin-bottom: 0.4rem;
+    }
+    .highlight-box {
+      background: #fef5e8;
+      border-left: 5px solid var(--honey);
+      padding: 1rem 1.5rem;
+      border-radius: 28px;
+      margin: 1.8rem 0;
+    }
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fffdf8;
+      border-radius: 24px;
+      overflow: hidden;
+      margin: 1.5rem 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .cookie-table th, .cookie-table td {
+      text-align: left;
+      padding: 1rem 1rem;
+      border-bottom: 1px solid #f7e1b5;
+    }
+    .cookie-table th {
+      background-color: #fcf2e2;
+      color: #a5672d;
+      font-weight: 600;
+    }
+    .cookie-table tr:last-child td {
+      border-bottom: none;
+    }
+    .last-updated {
+      font-style: italic;
+      text-align: right;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 2px dotted #f7deb0;
+      color: #9b784c;
+      font-size: 0.85rem;
+    }
+    .badge-gold {
+      background: #fbefd6;
+      display: inline-block;
+      padding: 0.2rem 1rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #a86728;
+      margin-right: 0.6rem;
+    }
+
+    footer {
+      background: #2f2419;
+      color: #faeecb;
+      margin-top: 3rem;
+      padding: 2rem 2rem 1.5rem;
+      border-radius: 48px 48px 0 0;
+    }
+    .footer-content {
+      max-width: 1300px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .footer-contact {
+      line-height: 1.7;
+    }
+    .footer-contact a {
+      color: #fad48b;
+      text-decoration: none;
+    }
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .footer-links a {
+      color: #ffdeaa;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+    @media (max-width: 750px) {
+      .policy-card {
+        padding: 1.5rem;
+      }
+      .policy-card h3 {
+        font-size: 1.5rem;
+      }
+      .cookie-table th, .cookie-table td {
+        padding: 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="top-bar">
+    <div class="logo">
+      <h1>🍽 Yotta Palate Paradox</h1>
+      <p>cream · golden · texture · aroma</p>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" data-page="home">Home</a></li>
+      <li><a href="#" data-page="about">About</a></li>
+      <li><a href="#" data-page="contact">Contact</a></li>
+      <li><a href="#" data-page="terms">Terms Of Privacy</a></li>
+      <li><a href="#" data-page="privacy">Privacy Policy</a></li>
+      <li><a href="#" data-page="cookies" class="active">Cookies Policy</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="container" id="mainApp">
+  <!-- DEDICATED COOKIES POLICY PAGE (visible by default on load) -->
+  <div id="cookiesPolicyPage">
+    <div class="cookies-hero">
+      <h2>🍪 Golden Cookies · Light & Essential</h2>
+      <p>At Yotta Palate Paradox, we believe in complete transparency. Our website uses only minimal cookies that make your experience smooth — like warm butter on cream brioche. No tracking pixels, no ads, no surprises.</p>
+    </div>
+
+    <div class="policy-card">
+      <h3>📜 1. What are cookies?</h3>
+      <p>Cookies are small text files stored on your device (computer, tablet or mobile) when you visit websites. They help remember your actions and preferences over a period of time, so you don’t have to re-enter them whenever you navigate between pages. We use only <strong>strictly necessary cookies</strong> that enable core functionality — like page routing and session consistency — without collecting any personal data for marketing or analytics platforms. Think of them as the 'silent sous-chefs', helpful and discreet.</p>
+
+      <h3>🍯 2. Our cookie philosophy — the golden pledge</h3>
+      <div class="highlight-box">
+        🌟 <strong>Zero third-party tracking. Zero advertising cookies. Zero analytics scripts that fingerprint you.</strong><br>
+        Unlike most websites, we don't use Google Analytics, Facebook Pixel, or any external trackers. The only minimal cookies we set are first-party, essential, and purely functional. Your visit stays in our cream-colored lounge — private and respectful.
+      </div>
+      
+      <h3>📋 3. Specific cookies we use</h3>
+      <p>The following table lists the only cookies that may be stored when you browse Yotta Palate Paradox. All are session-based or strictly functional, with no expiration beyond your browsing session (except for a lightweight preference cookie that remembers your last visited section if you return within the same day — we'll explain).</p>
+      
+      <table class="cookie-table">
+        <thead>
+          <tr><th>Cookie Name</th><th>Purpose</th><th>Duration</th><th>Type</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>yotta_session_id</code></td><td>Maintains your navigation state between pages (e.g., helps the website remember which page you're viewing, if you interact with multi-page routing). No personal info stored.</td><td>Session (deleted when you close browser)</td><td>Essential</td></tr>
+          <tr><td><code>yotta_pref_nav</code></td><td>Stores a lightweight preference for returning visitors — only the last visited page category (e.g., 'privacy' or 'cookies') to improve user experience. Not linked to identity.</td><td>24 hours</td><td>Functional</td></tr>
+          <tr><td><code>cookie_consent_accepted</code></td><td>Remembers that you’ve acknowledged our simplified cookie notice, so you don’t see the banner repeatedly. Does not track anything else.</td><td>365 days</td><td>Essential / Consent</td></tr>
+        </tbody>
+      </table>
+      <p><span class="badge-gold">⭐ transparency first</span> No other cookies (including localStorage for tracking) are used. We don't employ device fingerprinting, web beacons, or similar technologies. Your privacy is our recipe's main stock.</p>
+
+      <h3>🕹️ 4. Managing and disabling cookies</h3>
+      <p>Since we only use essential and functional cookies, disabling them may affect your experience — for instance, the website might not remember your page preferences or the cookie banner might reappear. However, you have full control. Most browsers allow you to block or delete cookies through their settings:</p>
+      <ul>
+        <li><strong>Chrome:</strong> Settings → Privacy and security → Cookies and other site data → Block all cookies (selective blocking possible).</li>
+        <li><strong>Firefox:</strong> Options → Privacy & Security → Enhanced Tracking Protection → Custom → Cookies.</li>
+        <li><strong>Safari:</strong> Preferences → Privacy → Block all cookies.</li>
+        <li><strong>Edge:</strong> Settings → Cookies and site permissions → Manage and delete cookies.</li>
+      </ul>
+      <p>Please note that if you disable all cookies (including essential ones), some interactive elements of our website may not work properly, but you can always contact us directly via email for any assistance.</p>
+
+      <h3>🍃 5. Consent & cookie banner</h3>
+      <p>When you first visit Yotta Palate Paradox, you'll see a small, unobtrusive banner explaining our use of minimal cookies. By continuing to browse the site (or clicking “Accept essential cookies”), you consent to the placement of the cookies described above. However, because we don't use any non-essential or tracking cookies, we kept the consent process light. You can withdraw your consent at any time by clearing your browser cookies or adjusting your browser settings. We never re-consent without a clear action.</p>
+
+      <h3>🔗 6. Third-party connections & embedded content</h3>
+      <p>Our website may occasionally contain links to external resources, such as recipe sources or ingredient suppliers. These third-party sites have their own cookie and privacy policies, over which we have no control. We encourage you to review those policies when you leave our domain. Additionally, we do not embed any social media widgets, YouTube videos, or external scripts that set cookies automatically. Any embedded media (if any in future) will be handled via 'no-cookie' enhanced modes.</p>
+
+      <h3>🛡️ 7. Updates to this Cookies Policy</h3>
+      <p>As we evolve our atelier and digital presence, we may refine this policy to reflect improvements or changes in regulations. The “Last Updated” date at the bottom of this page will always indicate the latest version. Significant changes will be communicated via a notice on our homepage. This policy is part of our broader <a href="#" data-page="privacy" style="color: #c47e2a; text-decoration: underline;">Privacy Policy</a>, which details how we process personal data beyond cookies.</p>
+
+      <div class="highlight-box">
+        🍪 <strong>Simple as a shortbread:</strong> We do not sell, trade, or share any cookie data with advertisers. The 'yotta_pref_nav' only stores a non-identifiable preference, and the session cookie is purely functional. Our website is a safe haven for cream & yellow food lovers.
+      </div>
+
+      <h3>📧 8. Questions about cookies?</h3>
+      <p>If you still have any doubts or wish to request further information about our cookie usage, please feel free to contact our Data Steward directly. We're as open as a flaky pastry.</p>
+      <p>📩 Email: <strong>privacy@yottapalate.com</strong><br>📬 Mail: Yotta Palate Paradox — Data Care, 422 Golden Cream Lane, Suite 7, Butterfield, NY 10014.</p>
+
+      <div class="last-updated">
+        🍰 Last Updated: April 28, 2026 — Yotta Palate Paradox Cookies Policy (Essential & Golden)
+      </div>
+    </div>
+
+    <!-- additional trust seal -->
+    <div style="background: #fff4e6; border-radius: 32px; padding: 1.5rem; text-align: center; border: 1px solid #f7e1b5;">
+      <p style="color: #8b5a2e;">🍯 <strong>Our promise to keep it minimal:</strong> No tracking, no analytics scripts, no cross-site cookies. Just the pure joy of cream & yellow recipes, served with respect for your digital privacy.</p>
+    </div>
+  </div>
+
+  <!-- other pages (hidden on default) for seamless routing -->
+  <div id="homePage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem; text-align: center;">
+      <h2>🍯 Yotta Palate Paradox — Home</h2>
+      <p>Discover cream & yellow recipes, golden gastronomy, and culinary paradox.</p>
+    </div>
+  </div>
+  <div id="aboutPage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem;">
+      <h2>📖 About The Paradox</h2>
+      <p>We explore the beauty of cream textures and yellow ingredients — from saffron to honey. Founded in 2026, Yotta Palate Paradox merges mindful cooking with artistic flavor philosophy.</p>
+    </div>
+  </div>
+  <div id="contactPage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem;">
+      <h2>📬 Golden Correspondence</h2>
+      <p>Our contact page is just a click away — share your recipe stories.</p>
+    </div>
+  </div>
+  <div id="termsPage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem;">
+      <h2>📜 Terms Of Privacy</h2>
+      <p>Combined legal framework: use of site implies acceptance of our respectful terms. For detailed privacy see Privacy Policy.</p>
+    </div>
+  </div>
+  <div id="privacyPolicyPage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem;">
+      <h2>🔏 Golden Data Pledge</h2>
+      <p>Full privacy policy describing how we collect, process and store data — with cream-colored promise.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-contact">
+      <strong>📍 Yotta Palate Paradox - Culinary Atelier</strong><br>
+      422 Golden Cream Lane, Suite 7<br>
+      Butterfield, NY 10014<br>
+      📞 <a href="tel:+12125556789">+1 (212) 555-6789</a><br>
+      ✉️ hello@yottapalate.com
+    </div>
+    <div class="footer-links">
+      <a href="#" data-page="privacy">Privacy Policy</a>
+      <a href="#" data-page="cookies" class="active-footer-link">Cookies Policy</a>
+      <a href="#" data-page="terms">Index Terms</a>
+      <a href="#" data-page="contact">Contact</a>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 Yotta Palate Paradox — cream & yellow recipe chronicles. Every contact is a golden thread. 🍪 minimal cookies only.
+  </div>
+</footer>
+
+<script>
+  // Page routing with a clean, modern approach — making sure Cookies page is default visible
+  const cookiesPage = document.getElementById('cookiesPolicyPage');
+  const homeDiv = document.getElementById('homePage');
+  const aboutDiv = document.getElementById('aboutPage');
+  const contactDiv = document.getElementById('contactPage');
+  const termsDiv = document.getElementById('termsPage');
+  const privacyDiv = document.getElementById('privacyPolicyPage');
+
+  function displayPage(pageId) {
+    const pages = [cookiesPage, homeDiv, aboutDiv, contactDiv, termsDiv, privacyDiv];
+    pages.forEach(page => { if(page) page.style.display = 'none'; });
+    
+    // show selected page based on mapping
+    switch(pageId) {
+      case 'cookies':
+      case 'cookiesPolicy':
+        if(cookiesPage) cookiesPage.style.display = 'block';
+        break;
+      case 'home':
+        if(homeDiv) homeDiv.style.display = 'block';
+        break;
+      case 'about':
+        if(aboutDiv) aboutDiv.style.display = 'block';
+        break;
+      case 'contact':
+        if(contactDiv) contactDiv.style.display = 'block';
+        break;
+      case 'terms':
+        if(termsDiv) termsDiv.style.display = 'block';
+        break;
+      case 'privacy':
+      case 'privacyPolicy':
+        if(privacyDiv) privacyDiv.style.display = 'block';
+        break;
+      default:
+        if(cookiesPage) cookiesPage.style.display = 'block';
+        break;
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    // update active state on both nav and footer links
+    document.querySelectorAll('.nav-links a, .footer-links a').forEach(link => {
+      link.classList.remove('active');
+      const linkPage = link.getAttribute('data-page');
+      if ((pageId === 'cookies' || pageId === 'cookiesPolicy') && (linkPage === 'cookies' || linkPage === 'cookiesPolicy')) {
+        link.classList.add('active');
+      } else if (pageId === 'privacyPolicy' && (linkPage === 'privacy' || linkPage === 'privacyPolicy')) {
+        link.classList.add('active');
+      } else if (linkPage === pageId) {
+        link.classList.add('active');
+      } else if (pageId === 'privacy' && linkPage === 'privacy') {
+        link.classList.add('active');
+      } else if (pageId === 'terms' && linkPage === 'terms') {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  // attach event listeners to all navigation triggers (both header and footer)
+  const allNavLinks = document.querySelectorAll('.nav-links a, .footer-links a');
+  allNavLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const page = link.getAttribute('data-page');
+      if (page === 'home') displayPage('home');
+      else if (page === 'about') displayPage('about');
+      else if (page === 'contact') displayPage('contact');
+      else if (page === 'terms') displayPage('terms');
+      else if (page === 'privacy' || page === 'privacyPolicy') displayPage('privacyPolicy');
+      else if (page === 'cookies' || page === 'cookiesPolicy') displayPage('cookies');
+      else displayPage('cookies');
+    });
+  });
+
+  // Set default visible page: COOKIES POLICY (active by design)
+  displayPage('cookies');
+  
+  // Simulated lightweight cookie consent banner respect - existing users
+  // This ensures that after navigating, the proper active state reflects cookies page.
+  // Optional: check if we need to set a small localStorage for consent preference? Not tracking related, just UX
+  if(!localStorage.getItem('cookie_consent_ack')) {
+    // Not intrusive, but we might set a silent flag only for banner avoidance. However no invasive, just for demonstration.
+    // For transparency, we do nothing except reflect the static info.
+  }
+  // Just to give a dynamic but respectful console note (no tracking)
+  console.log('🍪 Yotta Palate Paradox: Only essential, functional cookies used. Full transparency.');
+</script>
+</body>
+</html>

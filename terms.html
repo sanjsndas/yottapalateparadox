@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Yotta Palate Paradox | Terms of Privacy – Cream & Yellow Philosophy</title>
+  <meta name="description" content="Terms of Privacy for Yotta Palate Paradox. Learn about data usage, user responsibilities, and our commitment to transparency in this golden sanctuary.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef9e6;  /* cream base */
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #3a2a1f;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    /* cream & yellow theme palette */
+    :root {
+      --cream: #fff9ef;
+      --pale-cream: #fffaf0;
+      --butter: #fce9b4;
+      --honey: #f7c873;
+      --golden: #e5a641;
+      --warm-brown: #7a5a3a;
+      --deep-amber: #b47c2e;
+    }
+
+    /* header & navigation */
+    .top-bar {
+      background: var(--cream);
+      border-bottom: 4px solid var(--honey);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+    .logo h1 {
+      font-size: 1.9rem;
+      letter-spacing: -0.5px;
+      color: #a5672d;
+      font-weight: 600;
+    }
+    .logo p {
+      font-size: 0.85rem;
+      color: #b37b42;
+      font-style: italic;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #7a5a3a;
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      border-bottom-color: var(--golden);
+      color: #c47e2a;
+    }
+
+    /* main container */
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem 2rem 3rem;
+    }
+
+    /* page title + decorative banner */
+    .terms-hero {
+      background: linear-gradient(120deg, #fff4e3, #fff8ea);
+      border-radius: 48px;
+      padding: 2.2rem 2.5rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      border: 1px solid #ffe2b0;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+    }
+    .terms-hero h2 {
+      font-size: 2.4rem;
+      color: #c2822b;
+      font-weight: 500;
+      letter-spacing: -0.3px;
+    }
+    .terms-hero .effective-date {
+      font-size: 0.9rem;
+      color: #b47a36;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    .terms-hero p {
+      max-width: 760px;
+      margin: 1rem auto 0;
+      color: #5e3f22;
+    }
+
+    /* legal card style */
+    .legal-card {
+      background: var(--cream);
+      border-radius: 36px;
+      padding: 2rem 2.2rem;
+      margin-bottom: 2rem;
+      border: 1px solid #faeecf;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.02);
+    }
+    .legal-card h3 {
+      font-size: 1.8rem;
+      color: #b26c24;
+      margin-bottom: 1rem;
+      border-left: 6px solid var(--golden);
+      padding-left: 1rem;
+    }
+    .legal-card h4 {
+      font-size: 1.25rem;
+      color: #c2822b;
+      margin: 1rem 0 0.5rem;
+      font-weight: 600;
+    }
+    .legal-card p, .legal-card li {
+      color: #4a3720;
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+    .legal-card ul, .legal-card ol {
+      margin: 0.8rem 0 1rem 1.8rem;
+    }
+    .legal-card strong {
+      color: #a36226;
+    }
+    .highlight-note {
+      background: #fff7e5;
+      border-left: 4px solid var(--honey);
+      padding: 1rem 1.4rem;
+      border-radius: 24px;
+      margin: 1.2rem 0;
+      font-size: 0.95rem;
+    }
+
+    /* glossary / index terms section (consistent with theme) */
+    .index-snapshot {
+      background: #fdf6e3;
+      border-radius: 28px;
+      padding: 1.8rem;
+      margin: 2rem 0 1rem;
+      border: 1px solid #ffeaaf;
+    }
+    .index-snapshot h3 {
+      font-size: 1.6rem;
+      color: #a46724;
+      margin-bottom: 1rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+    .tag {
+      background: #f9e5b3;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #6b431e;
+    }
+
+    /* footer */
+    footer {
+      background: #2f2419;
+      color: #faeecb;
+      margin-top: 3rem;
+      padding: 2rem 2rem 1.5rem;
+      border-radius: 48px 48px 0 0;
+    }
+    .footer-content {
+      max-width: 1300px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .footer-contact {
+      line-height: 1.7;
+    }
+    .footer-contact a {
+      color: #fad48b;
+      text-decoration: none;
+    }
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .footer-links a {
+      color: #ffdeaa;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+    @media (max-width: 720px) {
+      .top-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .legal-card {
+        padding: 1.5rem;
+      }
+      .terms-hero h2 {
+        font-size: 1.8rem;
+      }
+      .legal-card h3 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="top-bar">
+    <div class="logo">
+      <h1>🍽 Yotta Palate Paradox</h1>
+      <p>cream · golden · texture · aroma</p>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="terms.html" class="active">Terms Of Privacy</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="cookies.html">Cookies Policy</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="container">
+  <!-- Introductions: Terms of Privacy Banner -->
+  <div class="terms-hero">
+    <h2>📜 Terms of Privacy & Usage</h2>
+    <div class="effective-date">Effective from: May 1st, 2026 | Golden Edition</div>
+    <p>Welcome to the Yotta Palate Paradox digital sanctuary. These Terms of Privacy outline the respectful framework for accessing our cream-and-yellow universe — from recipes to community interactions. By entering this atelier, you agree to honor the paradox: transparency, warmth, and culinary integrity.</p>
+  </div>
+
+  <!-- MAIN LEGAL CONTENT: Terms + Privacy combined elegantly -->
+  <div class="legal-card">
+    <h3>🍯 1. Our Golden Commitment</h3>
+    <p>Yotta Palate Paradox (referred to as “we”, “us”, or “the Atelier”) is a recipe sanctuary devoted to cream-based and yellow-hued gastronomy. We value your privacy as much as we value the perfect emulsion. This document explains how we collect, use, and safeguard any personal data when you visit our website, subscribe to our newsletter, or participate in our community events. We never sell or rent your data — just as we never rush a saffron infusion.</p>
+    
+    <h3>🌼 2. Information We Collect (Light as Whipped Cream)</h3>
+    <p><strong>Voluntary Information:</strong> When you sign up for our newsletter, comment on a recipe, or join a tasting club, you may provide your name, email address, and food preferences. We only ask for what’s necessary to enhance your culinary journey.</p>
+    <p><strong>Automated Data:</strong> Like most digital kitchens, we collect anonymized usage data (pages visited, recipe clicks, time spent) to improve our content. This data never identifies you personally — it’s like knowing that many people love golden risotto, without knowing who cooked it.</p>
+    <p><strong>Cookies & similar technologies:</strong> We use minimal cookies for functionality and analytics; see our <a href="cookies.html" style="color:#c2822b;">Cookies Policy</a> for the full menu of digital crumbs.</p>
+    
+    <h3>🍋 3. How We Use Your Information</h3>
+    <ul>
+      <li>✨ To send you seasonal recipe collections and golden inspirations if you subscribe.</li>
+      <li>📊 To analyze which recipes bring the most “paradox joy” and improve our offerings.</li>
+      <li>🧈 To respond to your inquiries, whether about a cream emulsion technique or an event.</li>
+      <li>🛡️ To protect the security and integrity of our community — preventing misuse or spam.</li>
+    </ul>
+    <div class="highlight-note">
+      🌟 <strong>Respectful Data Diet:</strong> We retain personal information only as long as necessary to fulfill the purposes outlined. You may request deletion anytime using the contact details below. No heavy cream data silos here.
+    </div>
+
+    <h3>🍯 4. Sharing & Third Parties – A Closed Atelier</h3>
+    <p>We never sell, trade, or rent your personal information. We may share data with trusted service providers (e.g., email delivery platforms, analytics services) that help operate our website under strict confidentiality agreements. All partners adhere to data protection standards consistent with our philosophy. In rare cases, we may disclose information if required by law or to protect the rights of Yotta Palate Paradox.</p>
+    
+    <h3>🌾 5. Your Rights – The Palette of Control</h3>
+    <p>Depending on your location (including GDPR or CCPA regions), you may have rights to access, correct, delete, or restrict processing of your personal data. You may also opt out of marketing communications via the ‘unsubscribe’ link in any newsletter. To exercise your rights, email us at <strong>privacy@yottapalate.com</strong> – we’ll respond within 30 days, garnished with clarity.</p>
+    
+    <h3>🧈 6. User Responsibilities & Content Guidelines</h3>
+    <p>Our comments section and community spaces are held to the same warm standard as our kitchen. By interacting, you agree not to post harmful, abusive, or discriminatory content. You retain ownership of your comments, but grant Yotta Palate Paradox a non-exclusive license to display and promote them within our platform. We reserve the right to remove any content that disturbs the cream-and-yellow harmony.</p>
+    <p>Any recipe adaptation you share should respect original sources. Plagiarism is the opposite of golden hour spirit.</p>
+    
+    <h3>🍪 7. External Links & Third-Party Ingredients</h3>
+    <p>Our articles may link to external sites (e.g., ingredient suppliers, culinary tools). We are not responsible for the privacy practices or content of those websites. We encourage you to read their policies before sharing personal information — much like checking the quality of saffron threads before infusing.</p>
+    
+    <h3>🌻 8. Children’s Privacy</h3>
+    <p>Our content is intended for general audiences and food lovers of all ages, but we do not knowingly collect personal information from children under 13. If you believe a child has provided us with data, please contact us, and we will delete it promptly — just as we gently fold egg whites into a custard.</p>
+    
+    <h3>📅 9. Updates to These Terms</h3>
+    <p>As our culinary universe evolves, we may update this Terms of Privacy document to reflect new practices or legal requirements. The “Effective Date” at the top will be revised accordingly. We encourage you to review this page occasionally. Continued use of our site constitutes acceptance of any changes, always aligned with our transparent ethos.</p>
+    
+    <h3>🍂 10. Contact – The Golden Hotline</h3>
+    <p>If you have questions, concerns, or simply wish to discuss the perfect crème anglaise, please reach out:</p>
+    <p>✉️ Email: <strong>legal@yottapalate.com</strong> (privacy & terms inquiries)<br>
+    📬 Mail: Yotta Palate Paradox – Legal, 422 Golden Cream Lane, Suite 7, Butterfield, NY 10014<br>
+    📞 Phone: <a href="tel:+12125556789" style="color:#b26c24;">+1 (212) 555-6789</a> (Attn: Privacy Steward)</p>
+    <div class="highlight-note">
+      💛 <strong>Paradox affirmation:</strong> By using Yotta Palate Paradox, you agree that your digital footprint here will be treated with the same delicate care as a saffron cream reduction — intentional, fragrant, and never overwhelming.
+    </div>
+  </div>
+
+  <!-- Special notes about index terms + glossary integration (brand consistency) -->
+  <div class="index-snapshot">
+    <h3>📑 Golden Index — Flavors of Our Digital Terms</h3>
+    <div class="tags" id="termsIndexTags">
+      <!-- dynamic culinary term tags for engagement -->
+    </div>
+    <p style="margin-top: 1rem; font-size: 0.85rem;">Transparency, emulsion ethics, data dignity — each ingredient in our privacy recipe is chosen to protect your experience while celebrating the yellow-velvet world of Yotta Palate Paradox.</p>
+  </div>
+  
+  <!-- secondary note about acceptance and accessibility -->
+  <div style="background: #fef3e0; border-radius: 28px; padding: 1.2rem 2rem; margin: 1rem 0; text-align: center; border: 1px solid #fbe2bc;">
+    <p style="color: #7a551e;">📖 This Terms of Privacy document is available in accessible format upon request. We believe legal clarity should be as comforting as a bowl of golden milk — no fine print traps, only warm disclosures.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-contact">
+      <strong>📍 Yotta Palate Paradox - Culinary Atelier</strong><br>
+      422 Golden Cream Lane, Suite 7<br>
+      Butterfield, NY 10014<br>
+      📞 <a href="tel:+12125556789">+1 (212) 555-6789</a><br>
+      ✉️ hello@yottapalate.com
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="index-terms.html">Index Terms</a>
+      <a href="index.html">Recipes</a>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 Yotta Palate Paradox — cream & yellow recipe chronicles. All legal textures designed with ethical clarity and a pinch of golden empathy.
+  </div>
+</footer>
+
+<script>
+  // Index terms reflect the culinary lexicon and also connect with privacy / terms concepts - brand unity
+  const termsIndexList = [
+    "data emulsion", "saffron privacy", "golden consent", "cream transparency",
+    "honey encryption", "custard compliance", "turmeric rights", "butter clause",
+    "marigold cookies", "vanilla access", "lemon zest deletion", "white pepper security",
+    "butternut accountability", "mascarpone retention", "poblano protection"
+  ];
+
+  function populateTermsTags() {
+    const container = document.getElementById('termsIndexTags');
+    if (container) {
+      container.innerHTML = termsIndexList.map(term => `<span class="tag">#${term}</span>`).join('');
+    }
+  }
+
+  // active nav link highlight for consistency (terms.html)
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.getAttribute('href') === 'terms.html') {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  populateTermsTags();
+
+  // subtle console greeting
+  console.log("🍯 Yotta Palate Paradox — Terms of Privacy loaded: ethical recipe for data dignity & cream harmony.");
+</script>
+</body>
+</html>

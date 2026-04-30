@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Yotta Palate Paradox | Contact Golden Atelier</title>
+  <meta name="description" content="Get in touch with the Yotta Palate Paradox team — share your cream & yellow recipe stories, press inquiries, or just send a golden note.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fef9e6;
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #3a2a1f;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --cream: #fff9ef;
+      --pale-cream: #fffaf0;
+      --butter: #fce9b4;
+      --honey: #f7c873;
+      --golden: #e5a641;
+      --warm-brown: #7a5a3a;
+      --deep-amber: #b47c2e;
+      --sage-light: #eae3d0;
+    }
+
+    .top-bar {
+      background: var(--cream);
+      border-bottom: 4px solid var(--honey);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+    .logo h1 {
+      font-size: 1.9rem;
+      letter-spacing: -0.5px;
+      color: #a5672d;
+      font-weight: 600;
+    }
+    .logo p {
+      font-size: 0.85rem;
+      color: #b37b42;
+      font-style: italic;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #7a5a3a;
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      border-bottom-color: var(--golden);
+      color: #c47e2a;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem 2rem 3rem;
+    }
+
+    /* contact hero */
+    .contact-hero {
+      background: linear-gradient(125deg, #fff4e2, #fef0da);
+      border-radius: 48px;
+      padding: 2rem 2.5rem;
+      margin-bottom: 2.5rem;
+      border: 1px solid #ffe3b0;
+      text-align: center;
+    }
+    .contact-hero h2 {
+      font-size: 2.2rem;
+      color: #c2822b;
+      font-weight: 500;
+    }
+    .contact-hero p {
+      max-width: 650px;
+      margin: 0.8rem auto 0;
+      color: #5e3f22;
+    }
+
+    /* two column layout */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 2rem;
+      margin: 2rem 0 2rem;
+    }
+    @media (max-width: 850px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .info-card, .form-card {
+      background: var(--cream);
+      border-radius: 36px;
+      padding: 2rem;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.03);
+      border: 1px solid #faeecf;
+      transition: transform 0.2s ease;
+    }
+    .info-card:hover, .form-card:hover {
+      border-color: var(--butter);
+      transform: translateY(-3px);
+    }
+
+    .info-card h3, .form-card h3 {
+      font-size: 1.9rem;
+      color: #b3742c;
+      margin-bottom: 1.2rem;
+      border-left: 5px solid var(--golden);
+      padding-left: 1rem;
+    }
+    .contact-details {
+      margin: 1.8rem 0;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+    .contact-icon {
+      font-size: 1.9rem;
+      background: #fcf0dd;
+      width: 52px;
+      height: 52px;
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #bd7a2a;
+    }
+    .contact-text strong {
+      color: #8a5a2c;
+      display: block;
+      font-size: 1rem;
+    }
+    .contact-text span, .contact-text a {
+      color: #6b4b2a;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .contact-text a:hover {
+      color: #c47e2a;
+      text-decoration: underline;
+    }
+
+    .social-links {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 2px dotted #f7dfb0;
+    }
+    .social-links p {
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+      color: #b37b42;
+    }
+    .social-icons {
+      display: flex;
+      gap: 1.2rem;
+    }
+    .social-icons a {
+      background: #f9e8cf;
+      padding: 0.5rem 1rem;
+      border-radius: 60px;
+      text-decoration: none;
+      color: #8a5a2c;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .social-icons a:hover {
+      background: var(--honey);
+      color: #4c2f12;
+    }
+
+    /* form styling */
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #7a542e;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border-radius: 48px;
+      border: 1px solid #f2e0be;
+      background: #fffef7;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: 0.2s;
+      outline: none;
+      color: #2e241b;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--golden);
+      box-shadow: 0 0 0 3px rgba(229,166,65,0.1);
+    }
+    textarea {
+      border-radius: 32px;
+      resize: vertical;
+    }
+    .btn-submit {
+      background: #f2d48c;
+      border: none;
+      padding: 0.9rem 1.8rem;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 60px;
+      color: #5a381a;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 0.5rem;
+      width: 100%;
+      font-family: inherit;
+    }
+    .btn-submit:hover {
+      background: #e9c572;
+      transform: scale(0.98);
+      color: #2f1f0c;
+    }
+    .form-message {
+      margin-top: 1rem;
+      text-align: center;
+      padding: 0.7rem;
+      border-radius: 60px;
+      font-size: 0.9rem;
+      background: #fef0db;
+      color: #b47526;
+    }
+
+    /* map placeholder */
+    .map-golden {
+      background: #faeecd;
+      border-radius: 28px;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+      border: 1px solid #ffe0aa;
+    }
+    .map-golden iframe {
+      width: 100%;
+      border-radius: 24px;
+      border: none;
+    }
+
+    footer {
+      background: #2f2419;
+      color: #faeecb;
+      margin-top: 3rem;
+      padding: 2rem 2rem 1.5rem;
+      border-radius: 48px 48px 0 0;
+    }
+    .footer-content {
+      max-width: 1300px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .footer-contact {
+      line-height: 1.7;
+    }
+    .footer-contact a {
+      color: #fad48b;
+      text-decoration: none;
+    }
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .footer-links a {
+      color: #ffdeaa;
+      text-decoration: none;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+    hr {
+      margin: 1rem 0;
+      border-color: #f8e0b0;
+    }
+    .required-star {
+      color: #c2822b;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="top-bar">
+    <div class="logo">
+      <h1>🍽 Yotta Palate Paradox</h1>
+      <p>cream · golden · texture · aroma</p>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" data-page="home">Home</a></li>
+      <li><a href="#" data-page="about">About</a></li>
+      <li><a href="#" data-page="contact" class="active">Contact</a></li>
+      <li><a href="#" data-page="terms">Terms Of Privacy</a></li>
+      <li><a href="#" data-page="privacy">Privacy Policy</a></li>
+      <li><a href="#" data-page="cookies">Cookies Policy</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="container" id="mainApp">
+  <!-- CONTACT PAGE (visible by default on this page) -->
+  <div id="contactPage">
+    <div class="contact-hero">
+      <h2>📬 Golden Correspondence</h2>
+      <p>Share your own cream & yellow recipe discoveries, ask about our Yotta Paradox philosophy, or just send us a honeyed note — we’d love to hear from you.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- left side: contact info & studio -->
+      <div class="info-card">
+        <h3>✦ Atelier Details</h3>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-text">
+              <strong>Yotta Palate Paradox Studio</strong>
+              <span>422 Golden Cream Lane, Suite 7<br>Butterfield, NY 10014</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <strong>Kitchen Hotline</strong>
+              <a href="tel:+12125556789">+1 (212) 555-6789</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-text">
+              <strong>Email Us</strong>
+              <a href="mailto:hello@yottapalate.com">hello@yottapalate.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕰️</div>
+            <div class="contact-text">
+              <strong>Golden Hours</strong>
+              <span>Monday – Friday: 10am – 6pm (EST)<br>Weekend retreat: closed but digital always open</span>
+            </div>
+          </div>
+        </div>
+        <div class="social-links">
+          <p>🍯 Spoonful of socials</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Pinterest">Pinterest</a>
+            <a href="#" aria-label="Substack">Newsletter</a>
+          </div>
+        </div>
+        <!-- embedded map (soft golden aesthetic) -->
+        <div class="map-golden">
+          <p style="margin-bottom: 0.6rem;">📍 Our cream-colored corner in Butterfield</p>
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0060%2C40.7128%2C-73.9352%2C40.7614&layer=mapnik&marker=40.735%2C-73.97" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <small style="color:#8e6a3a;">↝ Golden Cream Lane, culinary district</small>
+        </div>
+      </div>
+
+      <!-- right side: contact form -->
+      <div class="form-card">
+        <h3>✍️ Send a recipe thought</h3>
+        <form id="contactForm" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full name <span class="required-star">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="e.g., Marigold Baker">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address <span class="required-star">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="hello@creamkitchen.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="recipe-inquiry">🍲 Recipe Inquiry / Paradox Tip</option>
+              <option value="collaboration">🌟 Collaboration or Press</option>
+              <option value="support">🍯 Support / Site feedback</option>
+              <option value="other">📜 Other golden thoughts</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message <span class="required-star">*</span></label>
+            <textarea id="message" name="message" rows="5" required placeholder="Describe your cream & yellow inspiration, recipe idea, or question..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">✨ Send golden note ✨</button>
+          <div id="formStatus" class="form-message" style="display: none;"></div>
+        </form>
+        <p style="margin-top: 1.2rem; font-size: 0.75rem; text-align: center; color:#b48045;">We respect your privacy. Your details are only used to reply to your message — never shared.</p>
+      </div>
+    </div>
+
+    <!-- FAQ or additional note: cream & yellow ethos -->
+    <div style="background: #fff7eb; border-radius: 28px; padding: 1.8rem; margin-top: 1.5rem; border: 1px solid #fee2b5;">
+      <h4 style="color:#ba7a2c; margin-bottom: 0.5rem;">💛 Before you write — the Yotta ethos</h4>
+      <p>Every message seasoned with curiosity is welcome. Whether you’ve tried our <strong>Golden Saffron Cream Fettuccine</strong> or want to share a family custard recipe, we’ll reply with a warm, handwritten-style email (within 48 hours). If you’re a brand, please mention ‘golden partnership’ in the subject line. We celebrate the paradox of richness and lightness — just like our contact philosophy: personal, intentional, and always creamy in tone.</p>
+    </div>
+  </div>
+
+  <!-- placeholder pages (home, about, terms, privacy, cookies) for demo routing consistency -->
+  <div id="homePage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem; text-align: center;">
+      <h2>🍯 Yotta Palate Paradox — Home</h2>
+      <p>Discover cream & yellow recipes, golden gastronomy, and culinary paradox. <br> <a href="#" data-page="contact" style="color:#c47e2a;">→ back to contact</a></p>
+    </div>
+  </div>
+  <div id="aboutPage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem;">
+      <h2>📖 About The Paradox</h2>
+      <p>We explore the beauty of cream textures and yellow ingredients — from saffron to honey. Founded in 2026, Yotta Palate Paradox merges mindful cooking with artistic flavor philosophy.</p>
+    </div>
+  </div>
+  <div id="termsPage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem;">
+      <h2>📜 Terms Of Privacy</h2>
+      <p>Your data is handled with respect. For any inquiries reach our contact page.</p>
+    </div>
+  </div>
+  <div id="privacyPolicyPage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem;">
+      <h2>🔒 Privacy Policy</h2>
+      <p>We value your trust. Our contact form does not store personal data beyond email correspondence.</p>
+    </div>
+  </div>
+  <div id="cookiesPage" style="display: none;">
+    <div style="background: var(--cream); border-radius: 40px; padding: 2rem;">
+      <h2>🍪 Cookies Policy</h2>
+      <p>We use only essential session cookies to enhance your visit. No tracking for ads.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-contact">
+      <strong>📍 Yotta Palate Paradox - Culinary Atelier</strong><br>
+      422 Golden Cream Lane, Suite 7<br>
+      Butterfield, NY 10014<br>
+      📞 <a href="tel:+12125556789">+1 (212) 555-6789</a><br>
+      ✉️ hello@yottapalate.com
+    </div>
+    <div class="footer-links">
+      <a href="#" data-page="privacyPolicy">Privacy Policy</a>
+      <a href="#" data-page="terms">Index Terms</a>
+      <a href="#" data-page="contact">Contact</a>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 Yotta Palate Paradox — cream & yellow recipe chronicles. Every contact is a golden thread.
+  </div>
+</footer>
+
+<script>
+  // Simulated client-side routing to keep contact page primary but allow navigation to other sections (consistent with original design)
+  const contactDiv = document.getElementById('contactPage');
+  const homeDiv = document.getElementById('homePage');
+  const aboutDiv = document.getElementById('aboutPage');
+  const termsDiv = document.getElementById('termsPage');
+  const privacyPolicyDiv = document.getElementById('privacyPolicyPage');
+  const cookiesDiv = document.getElementById('cookiesPage');
+  
+  function showPage(pageId) {
+    // hide all page containers
+    const pages = [contactDiv, homeDiv, aboutDiv, termsDiv, privacyPolicyDiv, cookiesDiv];
+    pages.forEach(page => { if(page) page.style.display = 'none'; });
+    if (pageId === 'contact') contactDiv.style.display = 'block';
+    else if (pageId === 'home') homeDiv.style.display = 'block';
+    else if (pageId === 'about') aboutDiv.style.display = 'block';
+    else if (pageId === 'terms') termsDiv.style.display = 'block';
+    else if (pageId === 'privacy') privacyPolicyDiv.style.display = 'block';
+    else if (pageId === 'privacyPolicy') privacyPolicyDiv.style.display = 'block';
+    else if (pageId === 'cookies') cookiesDiv.style.display = 'block';
+    else contactDiv.style.display = 'block'; // fallback
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // update active nav style
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.classList.remove('active');
+      const linkPage = link.getAttribute('data-page');
+      if ((linkPage === pageId) || (pageId === 'privacyPolicy' && linkPage === 'privacy') || (pageId === 'cookies' && linkPage === 'cookies')) {
+        link.classList.add('active');
+      } else if (pageId === 'contact' && linkPage === 'contact') link.classList.add('active');
+      else if (pageId === 'about' && linkPage === 'about') link.classList.add('active');
+      else if (pageId === 'home' && linkPage === 'home') link.classList.add('active');
+      else if (pageId === 'terms' && linkPage === 'terms') link.classList.add('active');
+    });
+  }
+
+  // attach event listeners to all navigation links (header and footer)
+  const allNavLinks = document.querySelectorAll('.nav-links a, .footer-links a');
+  allNavLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const page = link.getAttribute('data-page');
+      if (page === 'home') showPage('home');
+      else if (page === 'about') showPage('about');
+      else if (page === 'contact') showPage('contact');
+      else if (page === 'terms') showPage('terms');
+      else if (page === 'privacy' || page === 'privacyPolicy') showPage('privacyPolicy');
+      else if (page === 'cookies') showPage('cookies');
+      else showPage('contact');
+    });
+  });
+
+  // contact form handler (simulated success with cream-yellow toast)
+  const contactForm = document.getElementById('contactForm');
+  const formStatus = document.getElementById('formStatus');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name')?.value.trim();
+      const email = document.getElementById('email')?.value.trim();
+      const message = document.getElementById('message')?.value.trim();
+      if (!name || !email || !message) {
+        formStatus.style.display = 'block';
+        formStatus.innerHTML = '❄️ Please fill all required fields (name, email, message). We’d love to hear from you!';
+        formStatus.style.background = '#ffe1bb';
+        formStatus.style.color = '#a6551a';
+        return;
+      }
+      if (!email.includes('@') || !email.includes('.')) {
+        formStatus.style.display = 'block';
+        formStatus.innerHTML = '🍯 Honey, that email looks unusual — please provide a valid address.';
+        return;
+      }
+      // simulate submission success
+      formStatus.style.display = 'block';
+      formStatus.innerHTML = `✨ Thanks ${escapeHtml(name)}! Your golden note has been received. Our cream & yellow team will reply within 48h. ✨`;
+      formStatus.style.background = '#f2e1bd';
+      formStatus.style.color = '#6f4822';
+      contactForm.reset();
+      setTimeout(() => {
+        formStatus.style.display = 'none';
+      }, 6000);
+    });
+  }
+
+  function escapeHtml(str) {
+    if(!str) return '';
+    return str.replace(/[&<>]/g, function(m) {
+      if (m === '&') return '&amp;';
+      if (m === '<') return '&lt;';
+      if (m === '>') return '&gt;';
+      return m;
+    });
+  }
+
+  // Default: ensure contact page is visible and active
+  showPage('contact');
+
+  // extra: set active contact on page load
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    if(a.getAttribute('data-page') === 'contact') a.classList.add('active');
+  });
+</script>
+</body>
+</html>
